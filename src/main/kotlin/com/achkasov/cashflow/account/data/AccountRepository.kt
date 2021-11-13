@@ -1,8 +1,9 @@
 package com.achkasov.cashflow.account.data
 
 import com.achkasov.cashflow.account.model.Account
-import org.springframework.data.repository.CrudRepository
-import org.springframework.data.rest.core.annotation.RepositoryRestResource
+import org.springframework.stereotype.Repository
 
-@RepositoryRestResource
-interface AccountRepository: CrudRepository<Account, Long>
+@Repository
+interface AccountRepository: org.springframework.data.repository.Repository<Account, Long> {
+    fun findAll(): List<Account>
+}
