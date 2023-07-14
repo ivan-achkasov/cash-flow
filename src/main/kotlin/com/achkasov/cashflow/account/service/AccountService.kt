@@ -1,6 +1,6 @@
 package com.achkasov.cashflow.account.service
 
-import com.achkasov.cashflow.account.data.AccountRepository
+import com.achkasov.cashflow.data.account.dto.AccountRepository
 import com.achkasov.cashflow.account.model.Account
 import org.springframework.stereotype.Service
 

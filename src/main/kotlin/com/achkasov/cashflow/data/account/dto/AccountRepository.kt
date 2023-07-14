@@ -1,4 +1,4 @@
-package com.achkasov.cashflow.account.data
+package com.achkasov.cashflow.data.account.dto
 
 import com.achkasov.cashflow.account.model.Account
 import org.springframework.stereotype.Repository

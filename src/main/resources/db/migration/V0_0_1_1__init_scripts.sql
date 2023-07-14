@@ -78,8 +78,8 @@ CREATE TABLE money_transfer_history
     received_amount    DECIMAL(20, 2) NOT NULL,
     exchange_rate      DECIMAL(20, 2) NOT NULL,
     transfer_date      DATE           NOT NULL,
-    from_commission     DECIMAL(5, 2),
-    to_commission       DECIMAL(5, 2),
+    from_commission    DECIMAL(5, 2),
+    to_commission      DECIMAL(5, 2),
     creation_timestamp TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT money_transfer_to_from_account_by_id_fk FOREIGN KEY (from_account_id) REFERENCES account (id),
     CONSTRAINT money_transfer_to_to_account_by_id_fk FOREIGN KEY (to_account_id) REFERENCES account (id)
